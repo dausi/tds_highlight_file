@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tds_highlight_file 0.9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2017-04-15T12:14:32+02:00\n"
+"PO-Revision-Date: 2017-04-15 12:18+0200\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#: packages/tds_highlight_file/controller.php:23
+#: packages/tds_highlight_file/controller.php:43
+#: packages/tds_highlight_file/blocks/tds_highlight_file/controller.php:30
+msgid "Highlight File"
+msgstr "Datei markiert anzeigen"
+
+#: packages/tds_highlight_file/controller.php:28
+#: packages/tds_highlight_file/blocks/tds_highlight_file/controller.php:25
+msgid "Add a highlighted file block on your pages."
+msgstr "Block mit Datei hervorgehoben anzeigen."
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:13
+msgid "Select a file to highlight."
+msgstr "Datei zur Anzeige wählen."
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:20
+msgid "Highlight File window height"
+msgstr "Anzahl Zeilen für markierte Datei"
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:23
+msgid "lines"
+msgstr "Zeilen"
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:25
+msgid "Highlight File window height is not a valid number"
+msgstr "Die Anzahl Zeilen für markierte Datei ist keine gültige Zahl"
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:28
+msgid "Highlight File type"
+msgstr "Markierungs-Datei-Typ"
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/view.php:23
+msgid "File:"
+msgstr "Datei:"

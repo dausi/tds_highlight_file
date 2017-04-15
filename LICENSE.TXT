@@ -1,0 +1,12 @@
+This software is licensed under the terms described in the concrete5.org marketplace.
+
+Third party license conditions
+==============================
+
+jQuery File Tree Plugin - Version 1.01 (24 March 2008)
+Cory S.N. LaViska
+A Beautiful Site (http://abeautifulsite.net/)
+Visit https://www.abeautifulsite.net/jquery-file-tree for more information
+
+This plugin is dual-licensed under the GNU General Public License and the MIT License and is copyright 2008 A Beautiful Site, LLC. 
+See https://www.abeautifulsite.net/jquery-file-tree#licensing

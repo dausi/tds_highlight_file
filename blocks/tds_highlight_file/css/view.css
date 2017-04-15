@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+.ccm-block-highlight-file-wrapper {
+	margin-bottom: 10px;
+}
+.ccm-block-highlight-file-view-header {
+	background: #ebebeb;
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 5px;
+	width: 100%;
+}
+.ccm-block-highlight-file-view-header .toggle {
+	float: right;
+	padding: 0px 5px;
+}
+@media screen and (min-width: 768px) {
+	.ccm-block-highlight-file-view-header .toggle .fa-caret-right {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.ccm-block-highlight-file-view,
+	.ccm-block-highlight-file-view-header .toggle .fa-caret-down {
+		display: none;
+	}
+}
+.ccm-block-highlight-file-view {
+	border: 1px solid #eee;
+	display: none;
+	width: 100%;
+}
+.ccm-block-highlight-file-view .ace_scroller {
+	font-size: 14px;	/* used on window height calculation */
+	line-height: 1.2em;	/* used on window height calculation */
+	pointer-events: none;
+}

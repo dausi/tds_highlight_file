@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+#filetree {
+   	height: 425px;
+   	overflow-y: scroll;
+}
+#filetree.c5-7 {
+	height: 390px;
+}
+.ccm-block-highlight-file label.control-label {
+    padding-top: 0px;
+}
+.ccm-block-highlight-file #highlightFile {
+    margin-bottom: 20px;
+}
+.ccm-block-highlight-file .form-group .form-50 {
+	width: 50%;
+}
