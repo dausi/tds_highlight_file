@@ -1,48 +1,53 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: tds_highlight_file 0.9.0\n"
+"Project-Id-Version: tds_highlight_file 0.9.2\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2017-04-15T12:14:32+02:00\n"
-"PO-Revision-Date: 2017-04-15T12:14:32+02:00\n"
+"POT-Creation-Date: 2017-09-09T18:11:05+02:00\n"
+"PO-Revision-Date: 2017-09-09T18:11:05+02:00\n"
 "Language: en_US\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: packages/tds_highlight_file/controller.php:23
-#: packages/tds_highlight_file/controller.php:43
-#: packages/tds_highlight_file/blocks/tds_highlight_file/controller.php:30
+#: packages/tds_highlight_file/controller.php:26
+#: packages/tds_highlight_file/blocks/tds_highlight_file/controller.php:31
 msgid "Highlight File"
 msgstr ""
 
-#: packages/tds_highlight_file/controller.php:28
-#: packages/tds_highlight_file/blocks/tds_highlight_file/controller.php:25
+#: packages/tds_highlight_file/controller.php:31
+#: packages/tds_highlight_file/blocks/tds_highlight_file/controller.php:26
 msgid "Add a highlighted file block on your pages."
 msgstr ""
 
-#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:13
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:133
 msgid "Select a file to highlight."
 msgstr ""
 
-#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:20
-msgid "Highlight File window height"
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:134
+msgid "Choose File"
 msgstr ""
 
-#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:23
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:136
+msgid "Highlight File window height [lines]"
+msgstr ""
+
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:139
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:169
+#: packages/tds_highlight_file/blocks/tds_highlight_file/view.php:19
 msgid "lines"
 msgstr ""
 
-#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:25
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:141
 msgid "Highlight File window height is not a valid number"
 msgstr ""
 
-#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:28
+#: packages/tds_highlight_file/blocks/tds_highlight_file/form.php:144
 msgid "Highlight File type"
 msgstr ""
 
-#: packages/tds_highlight_file/blocks/tds_highlight_file/view.php:23
+#: packages/tds_highlight_file/blocks/tds_highlight_file/view.php:19
 msgid "File:"
 msgstr ""

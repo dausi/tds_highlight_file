@@ -1,8 +1,9 @@
 <?php
 namespace Concrete\Package\TdsHighlightFile\Block\TdsHighlightFile;
 
+use File;
+use AssetList;
 use Concrete\Core\Block\BlockController;
-use \Core;
 
 /**
  * Highlight File block type implementation.
@@ -14,11 +15,11 @@ use \Core;
  */
 class Controller extends BlockController
 {
+    protected $btCacheBlockRecord = true;
     protected $btInterfaceWidth = 600;
-    protected $btInterfaceHeight = 580;
-    protected $btCacheBlockOutput = true;
+    protected $btInterfaceHeight = 235;
     protected $btTable = 'btTdsHighlightFile';
-    protected $btDefaultSet = 'basic';
+    protected $btDefaultSet = 'develop';
 
     public function getBlockTypeDescription()
     {
@@ -32,30 +33,53 @@ class Controller extends BlockController
 
     public function add()
     {
+		$this->set('noLines', 0);
+		$this->set('highlightFileName', '');
 		$this->set('winHeight', 26);
 		$this->set('aceType', 'text');
-		$this->edit();
     }
 
-    public function edit()
-    {
-    	$pkgHandle = 'tds_highlight_file';
-		$blockUrl = BASE_URL.'/packages/'.$pkgHandle.'/blocks/'.$pkgHandle;
-		$html = Core::make('helper/html');
-		$this->addFooterItem($html->javascript($blockUrl.'/js/form.js'));
-		$this->addHeaderItem($html->css($blockUrl.'/css/form.css'));
-    }
 
     public function view()
     {
-		$pkgHandle = $this->getBlockObject()->getPackageHandle();
-    	$this->requireAsset('ace');
-    	$this->requireAsset('ace/'.$pkgHandle);
-    	$this->requireAsset($pkgHandle);
+		$file = File::getByID($this->highlightFileID);
+        $this->set('file', $file);
+	}
+
+    public function getFileID()
+    {
+        return $this->highlightFileID;
     }
 
-    public function save($args)
+    public function getFileObject()
     {
-    	parent::save($args);
+        if ($this->highlightFileID) {
+            return File::getByID($this->highlightFileID);
+        } else {
+            return null;
+        }
     }
+	
+    public function on_start()
+    {
+    	$al = AssetList::getInstance();
+		$pkgHandle = 'tds_highlight_file'; // no blockObject on add()! else: $this->getBlockObject()->getPackageHandle();
+
+		$assets = [
+			'css' => 'blocks/'.$pkgHandle.'/css/form.css',
+			'javascript' => 'blocks/'.$pkgHandle.'/js/form.js'
+		];
+    	$assetGroups = [];
+		foreach ($assets as $type => $asset)
+		{
+			$al->register($type, $pkgHandle.'/'.$type, $asset, [], $pkgHandle);
+			$assetGroups[] = [$type, $pkgHandle.'/'.$type];
+		}
+		$al->registerGroup($pkgHandle.'/block', $assetGroups);
+		$this->requireAsset($pkgHandle.'/block');
+		
+    	$this->requireAsset('ace');
+    	$this->requireAsset($pkgHandle);
+	}
+
 }
