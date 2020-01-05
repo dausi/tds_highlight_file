@@ -10,7 +10,7 @@ use Concrete\Core\Block\BlockController;
  *
  * block controller
  *
- * Copyright 2017 - TDSystem Beratung & Training - Thomas Dausner (aka dausi)
+ * Copyright 2017 - TDSystem Beratung & Training - Thomas Dausner
  *
  */
 class Controller extends BlockController

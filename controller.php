@@ -11,14 +11,14 @@ use AssetList;
  *
  * package controller
  *
- * Copyright 2017 - TDSystem Beratung & Training - Thomas Dausner (aka dausi)
+ * Copyright 2017 - TDSystem Beratung & Training - Thomas Dausner
  *
  */
 class Controller extends Package
 {
     protected $pkgHandle = 'tds_highlight_file';
     protected $appVersionRequired = '5.7.5.6';
-    protected $pkgVersion = '0.9.3';
+    protected $pkgVersion = '0.9.4';
 
     public function getPackageName()
     {
@@ -41,8 +41,7 @@ class Controller extends Package
 
     public function on_start()
     {
-		$route = Router::route(['lines', $this->pkgHandle]);
-		Route::register($route, 'Concrete\Package\TdsHighlightFile\Controller\Lines::lines');
+		Route::register('/ccm/lines/', 'Concrete\Package\TdsHighlightFile\Controller\Lines::lines');
 
 		$al = AssetList::getInstance();
 		$assets = [

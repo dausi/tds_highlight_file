@@ -1,7 +1,7 @@
 <?php  defined('C5_EXECUTE') or die('Access Denied.');
 
 /*
- * Highlight File block type implementation by Thomas Dausner (aka dausi)
+ * Highlight File block type implementation by Thomas Dausner
  */
 if (is_object($file)) {
 	$content = h($file->getFileContents());
