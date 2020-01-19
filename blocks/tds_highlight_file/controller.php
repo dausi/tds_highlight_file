@@ -78,8 +78,13 @@ class Controller extends BlockController
 		$al->registerGroup($pkgHandle.'/block', $assetGroups);
 		$this->requireAsset($pkgHandle.'/block');
 		
-    	$this->requireAsset('ace');
     	$this->requireAsset($pkgHandle);
+        $this->requireAsset('ace');
+        // ace doesn't load if JS cache is on. Here's a workaround:
+        $al->register('javascript', 'ace-js', '/concrete/js/ace/ace.js', [ 'local' => false ]);
+        $al->registerGroup('ace-js', [['javascript', 'ace-js']]);
+    	$this->requireAsset('ace-js');
+
 	}
 
 }

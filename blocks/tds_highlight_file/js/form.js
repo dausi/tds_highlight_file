@@ -3,7 +3,7 @@
  *
  * js for form controller for add/edit
  *
- * Copyright 2017 - TDSystem Beratung & Training - Thomas Dausner (aka dausi)
+ * Copyright 2017 - TDSystem Beratung & Training - Thomas Dausner
  *
  */
 (function($) {

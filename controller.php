@@ -41,7 +41,7 @@ class Controller extends Package
 
     public function on_start()
     {
-		Route::register('/ccm/lines/', 'Concrete\Package\TdsHighlightFile\Controller\Lines::lines');
+		Route::register('/ccm/tds_highlight_file/lines/', 'Concrete\Package\TdsHighlightFile\Controller\Lines::lines');
 
 		$al = AssetList::getInstance();
 		$assets = [
