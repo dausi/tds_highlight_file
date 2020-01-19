@@ -18,7 +18,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'tds_highlight_file';
     protected $appVersionRequired = '5.7.5.6';
-    protected $pkgVersion = '0.9.4';
+    protected $pkgVersion = '0.9.5';
 
     public function getPackageName()
     {
